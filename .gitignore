@@ -1,0 +1,29 @@
+# Carpetas
+/cache
+/libraries
+/logs
+/versions
+/crash-reports
+/debug
+
+# Worlds Files
+/world*/*
+!/world*/paper-world.yml
+!/world*/datapacks
+
+# Files
+.console_history
+version_history.json
+usercache.json
+eula.txt
+
+# Confidencial
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+
+# Java Servers
+*.jar
+*.bin
+*.exe
