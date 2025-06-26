@@ -337,6 +337,18 @@ world-settings:
       piston:
         block-push-limit: 12
     mobs:
+      happy_ghast:
+        ridable-in-water: false
+        attributes:
+          max_health: 20.0
+          tempt_range: 16.0
+          flying_speed: 0.05
+          movement_speed: 0.05
+          follow_range: 16.0
+          camera_distance: 8.0
+          scale: 1.0
+        takes-damage-from-water: false
+        always-drop-exp: false
       wandering_trader:
         ridable: false
         ridable-in-water: true
