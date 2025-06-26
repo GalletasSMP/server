@@ -27,3 +27,7 @@ whitelist.json
 *.jar
 *.bin
 *.exe
+
+# Env
+env.bat
+env.sh
