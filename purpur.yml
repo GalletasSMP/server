@@ -10,6 +10,7 @@
 
 verbose: false
 settings:
+  register-minecraft-disabled-commands: false
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
     afk-broadcast-away: <yellow><italic>%s is now AFK
