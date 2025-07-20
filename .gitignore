@@ -27,6 +27,7 @@ whitelist.json
 *.jar
 *.bin
 *.exe
+*.zip
 
 # Env
 env.bat
