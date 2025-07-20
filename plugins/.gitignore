@@ -4,3 +4,5 @@
 /.paper-remapped
 # Update folder
 /update
+# Databases
+/*/*.db
