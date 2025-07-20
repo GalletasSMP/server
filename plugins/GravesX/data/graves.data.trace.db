@@ -1,0 +1,39 @@
+2025-07-19 19:16:12.291855+02:00 jdbc[3]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S04 not found); SQL statement:
+SELECT * FROM grave; [42104-232]
+2025-07-19 19:16:12.517734+02:00 jdbc[4]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE block ADD COLUMN IF NOT EXISTS location VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.517801+02:00 jdbc[3]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE block ADD COLUMN IF NOT EXISTS replace_material VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.518058+02:00 jdbc[5]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE block ADD COLUMN IF NOT EXISTS replace_data TEXT [42102-232]
+2025-07-19 19:16:12.518376+02:00 jdbc[3]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE hologram ADD COLUMN IF NOT EXISTS uuid_grave VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.518428+02:00 jdbc[4]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE hologram ADD COLUMN IF NOT EXISTS line INTEGER [42102-232]
+2025-07-19 19:16:12.518503+02:00 jdbc[5]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE hologram ADD COLUMN IF NOT EXISTS uuid_entity VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.518990+02:00 jdbc[3]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+SELECT * FROM itemframe; [42102-232]
+2025-07-19 19:16:12.519165+02:00 jdbc[5]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE block ADD COLUMN IF NOT EXISTS uuid_grave VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.519657+02:00 jdbc[4]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE armorstand ADD COLUMN IF NOT EXISTS location VARCHAR(255) [42102-232]
+2025-07-19 19:16:12.520151+02:00 jdbc[5]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S02 not found); SQL statement:
+ALTER TABLE itemframe ADD COLUMN IF NOT EXISTS location VARCHAR(255) [42102-232]
+2025-07-19 19:18:26.086768+02:00 jdbc[6]: exception
+com.ranull.graves.libraries.h2.jdbc.JdbcSQLSyntaxErrorException: (Message 42S01 not found); SQL statement:
+CREATE TABLE block (location VARCHAR(255),
+uuid_grave VARCHAR(255),
+replace_material VARCHAR(255),
+replace_data TEXT) [42101-232]
