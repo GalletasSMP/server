@@ -38,7 +38,7 @@ anti-bot:
 # the player just disconnect and sees the message: 'bad login' or 'invalid session'
 # There is no way to change this message
 # For more information: https://github.com/games647/FastLogin#why-do-players-have-to-invoke-a-command
-autoRegister: false
+autoRegister: true
 
 # Should FastLogin respect per IP limit of registrations (e.g. in AuthMe)
 # Because most auth plugins do their stuff async - FastLogin will still think the player was registered
@@ -82,7 +82,7 @@ switchMode: false
 # authentication.
 #
 # This feature requires Cauldron, Spigot or a fork of Spigot (Paper)
-premiumUuid: false
+premiumUuid: true
 
 # This will make an additional check (only for player names which are not in the database) against the mojang servers
 # in order to get the premium UUID. If that premium UUID is in the database, we can assume on successful login that the
@@ -127,7 +127,7 @@ premiumUuid: false
 #
 # **Limitation from autoRegister**: New offline players who use the username of an existing Minecraft cannot join the
 # server.
-nameChangeCheck: false
+nameChangeCheck: true
 
 # If your players have a premium account and a skin associated to their account, this plugin
 # can download the data and set it to the online player.
