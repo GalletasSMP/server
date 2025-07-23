@@ -10,7 +10,7 @@ settings:
     web-address: https://satelite.servidorgalletas.es
     web-directory:
         path: web
-        auto-update: true
+        auto-update: false
     image-quality:
         compress-images:
             enabled: false
