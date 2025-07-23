@@ -1,4 +1,4 @@
-language: en
+language: es
 mob_defaults:
   damage:
     formula: '{mob_damage} + ({mob_damage} * ({level} - 1) / 25)'

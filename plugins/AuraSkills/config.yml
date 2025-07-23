@@ -24,7 +24,7 @@ sql:
     connection_timeout: 5000
     max_lifetime: 1800000
     keepalive_time: 0
-default_language: en
+default_language: es
 languages:
 - en
 - es
@@ -139,7 +139,7 @@ jobs:
       interval_ms: 2000
       display_individual: false
 anti_afk:
-  enabled: false
+  enabled: true
   logging_enabled: true
   log_threshold: min_count*4
   checks:
@@ -169,7 +169,7 @@ anti_afk:
     fishing_a:
       enabled: true
       min_count: 10
-enable_roman_numerals: false
+enable_roman_numerals: true
 damage_holograms:
   enabled: true
   scaling: true
@@ -214,7 +214,7 @@ blocked_worlds:
 - Example
 disabled_worlds:
 - Example
-disable_in_creative_mode: false
+disable_in_creative_mode: true
 data_validation:
   correct_over_max_level: false
 on_death:
