@@ -28,12 +28,12 @@
 
 messages:
     - ''
-    - '&7Welcome to &e&lGeneric Server Name&7!'
+    - '         &r'
     - ''
-    - '&7» [&e%online%&7/&e%max%&7] player(s) online.'
-    - '&7» &aNEW: &7Feature X added!'
+    - '&7» [&e%online%&7/&e%max%&7] jugadore(s) en linea.'
+    - '&7» &aNOVEDAD: &7Estamos de vuelta.'
     - ''
-    - '&7» &aPictureLogin &7by &aNathanG&7.'
+    - '&7» &3www.servidorgalletas.com'
     - ''
 
 #############
@@ -43,7 +43,7 @@ messages:
 # when a player joins for the first
 # time. Refer to above for variables.
 
-show-first-join: true
+show-first-join: false
 
 first-join-messages:
     - ''
@@ -148,10 +148,11 @@ character: 'BLOCK'
 # %uuid%   - Joined player's UUID
 # %pname%  - Joined player's Username
 
-url: 'https://minepic.org/avatar/8/%uuid%'
+# url: 'https://minepic.org/avatar/8/%uuid%'
 
 # If the above doesn't work (offline mode) - USE THIS URL:
-# url: 'https://minepic.org/avatar/8/%pname%'
+#url: 'https://minepic.org/avatar/8/%pname%'
+url: 'https://satelite.servidorgalletas.com/skins/%pname%.png'
 
 #############
 # Async
@@ -170,7 +171,7 @@ async: true
 # regardless of whether or not
 # they have the permission picturelogin.show
 
-require-permission: true
+require-permission: false
 
 #############
 # Hook Plugins
