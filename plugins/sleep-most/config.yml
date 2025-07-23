@@ -29,18 +29,18 @@ sleep:
     percentage-required: 0.5
     players-required: 5
     mob-no-target: true
-    use-exempt: false
-    use-afk: false
+    use-exempt: true
+    use-afk: true
     use-bossbar: false
-    use-sound-night-skipped: false
-    use-sound-storm-skipped: false
+    use-sound-night-skipped: true
+    use-sound-storm-skipped: true
     use-title-night-skipped: false
     use-title-storm-skipped: false
-    exempt-creative: false
-    exempt-spectator: false
+    exempt-creative: true
+    exempt-spectator: true
     prevent-sleep: false
     prevent-phantom: false
-    nightcycle-animation: false
+    nightcycle-animation: true
     storm-sleep: true
     skip-delay: 0
     heal: false
@@ -55,8 +55,7 @@ sleep:
     phantom-reset-audience: all
     disable-daylight-cycle-gamerule: true
     gsit-sleep-cmd: false
-    dynamic-animation-speed: false
-    exempt-below-y: -1
+    dynamic-animation-speed: true
     exempt-flying: false
     allow-kick: false
     non-sleeping-clock-animation: false
