@@ -10,9 +10,49 @@
 # Download placeholders: /papi ecloud
 check_updates: true
 cloud_enabled: true
-cloud_sorting: "name"
+cloud_sorting: name
 boolean:
   'true': 'yes'
   'false': 'no'
-date_format: MM/dd/yy HH:mm:ss
+date_format: dd/MM/yy HH:mm:ss
 debug: false
+expansions:
+  vault:
+    formatting:
+      thousands: k
+      millions: M
+      billions: B
+      trillions: T
+      quadrillions: Q
+  player:
+    ping_value:
+      high: 100
+      medium: 50
+    direction:
+      north: N
+      south: S
+      north_west: NO
+      north_east: NE
+      east: E
+      south_east: SE
+      west: O
+      south_west: SO
+    ping_color:
+      medium: '&e'
+      high: '&c'
+      low: '&a'
+  server:
+    server_name: Galletas SMP
+    time:
+      locale: es-ES
+      zone: Europe/Madrid
+      suffix:
+        week: w
+        day: d
+        hour: h
+        minute: m
+        second: s
+    tps_color:
+      high: '&a'
+      medium: '&e'
+      low: '&c'
