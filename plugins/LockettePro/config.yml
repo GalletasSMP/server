@@ -2,7 +2,7 @@
 # https://github.com/connection-lost/LockettePro/wiki/*-config.yml
 # If there are missing entries, you can add them manually.
 
-language-file-name: lang.yml
+language-file-name: lang_es.yml
 enable-quick-protect: true
 enable-uuid-support: false
 protocollib: true
