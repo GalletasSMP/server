@@ -1,1 +1,4 @@
 /libs
+/translations/repository/status.json
+/yaml-storage/users
+/yaml-storage/*.txt

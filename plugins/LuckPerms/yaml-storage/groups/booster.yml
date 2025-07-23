@@ -1,0 +1,27 @@
+name: booster
+permissions:
+- authme.player.*
+- essentials.afk
+- essentials.afk.auto
+- essentials.balance
+- essentials.ban.notify
+- essentials.help
+- essentials.kick.notify
+- essentials.mute.notify
+- essentials.rules
+- essentials.tpa
+- essentials.tpacancel
+- essentials.tpaccept
+- essentials.tpdeny
+- essentials.discord.receive.primary
+- essentials.pay
+- essentials.msg
+- skinsrestorer.player
+- tab.scoreboard.toggle
+- essentials.home
+prefixes:
+- '&r &r':
+    priority: 1
+suffixes:
+- ' &r&a⭐ %Advancements_completedAmount% &3⚡ %auraskills_power%&r':
+    priority: 1
