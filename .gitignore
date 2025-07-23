@@ -32,3 +32,4 @@ whitelist.json
 # Env
 env.bat
 env.sh
+*.env
