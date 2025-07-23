@@ -4,10 +4,10 @@ settings:
         main-command-label: squaremap
         main-command-aliases:
         - map
-    language-file: lang-en.yml
+    language-file: lang-es.yml
     debug-mode: false
     update-checker: true
-    web-address: http://localhost:8080
+    web-address: https://satelite.servidorgalletas.es
     web-directory:
         path: web
         auto-update: true
@@ -18,7 +18,7 @@ settings:
     internal-webserver:
         enabled: true
         bind: 0.0.0.0
-        port: 8080
+        port: 8246
         flush-json-immediately: false
     ui:
         coordinates:
@@ -86,7 +86,7 @@ world-settings:
             nameplate:
                 enabled: true
                 show-head: true
-                heads-url: https://mc-heads.net/avatar/{uuid}/16
+                heads-url: https://satelite.servidorgalletas.com/skins/{name}.png
                 show-armor: true
                 show-health: true
             hide:
