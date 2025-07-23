@@ -15,10 +15,10 @@
 token: "INSERT-TOKEN-HERE"
 
 # The ID of your server.
-guild: 000000000000000000
+guild: 1101899223580037262
 
 # The Discord invite URL that will be shown when a player when using the /discord command or in other areas.
-discord-url: "https://discord.gg/invite-code"
+discord-url: "https://discord.gg/QfZGAuUMyM"
 
 # Defined text channels
 # =====================
@@ -38,8 +38,8 @@ discord-url: "https://discord.gg/invite-code"
 # - staff, which will send kick/mute messages
 # (note: you will need to replace the zeros with the actual channel ID you want to use)
 channels:
-  primary: 000000000000000000
-  staff: 000000000000000000
+  primary: 1101899225064800428
+  staff: 1101899442061320234
 
 # Should all players receive Discord messages from the primary channel, regardless of their permissions?
 # This is intended for use for people without permission plugins. If you have a permission plugin, please give your
@@ -80,7 +80,7 @@ console:
   # The channel ID (or webhook URL) to send the console output to.
   # If the channel ID/webhook URL is invalid or set to 'none', the console relay will be disabled.
   # Note: If you use a channel ID, the bot must have the "Manage Webhooks" permission in Discord or else the console relay will not work.
-  channel: 000000000000000000
+  channel: 1246023986312384533
   # The format of the console message. The following placeholders can be used:
   # - {timestamp}: Timestamp in HH:mm:ss format
   # - {level}: The console logging level
@@ -158,12 +158,13 @@ message-types:
 
 # Whether or not player messages should show their avatar as the profile picture in Discord.
 # The bot will require the "Manage Webhooks" permission in the defined channels in order to use this feature.
-show-avatar: false
+show-avatar: true
 # The URL which should be used to get the avatars of users when "show-avatar" is set to true.
 # Any URL in here should only return a proper JPEG/PNG image and nothing else.
 # To include the UUID of the player in this URL, use "{uuid}".
 # To include the name of the player in this URL, use "{name}".
-avatar-url: "https://crafthead.net/helm/{uuid}"
+avatar-url: "https://crafthead.net/helm/{name}"
+#avatar-url: "https://satelite.servidorgalletas.com/skins/{name}.png"
 
 # Whether or not fake join and leave messages should be sent to Discord when a player toggles vanish in Minecraft.
 # Fake join/leave messages will be sent the same as real join and leave messages (and to the same channel).
@@ -261,7 +262,7 @@ presence:
   # - "none": Don't show any activity message
   activity: "playing"
   # The activity status message.
-  message: "Minecraft"
+  message: "Galletas SMP"
 
 # The following entries allow you to customize the formatting of messages sent by the plugin.
 # Each message has a description of how it is used along with placeholders that can be used.
@@ -276,7 +277,7 @@ messages:
   # - {role}: The name of the user's topmost role on Discord. If the user doesn't have a role, the placeholder is empty.
   # - {color}: The minecraft color representative of the user's topmost role color on Discord. If the user doesn't have a role color, the placeholder is empty.
   # - {message}: The content of the message being sent
-  discord-to-mc: "&6[#{channel}] &3{fullname}&7: &f{message}"
+  discord-to-mc: "&6[Discord] &3{fullname}&7: &f{message}"
   # This is the message that is used to relay minecraft chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -286,7 +287,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord: "{displayname}: {message}"
+  mc-to-discord: "{username}: {message}"
   # This is the bot's name which appears in Discord when sending player-specific messages.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -306,7 +307,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-local: "**[Local]** {displayname}: {message}"
+  mc-to-discord-local: "**[Local]** {username}: {message}"
   # This is the message that is used to relay questions from minecraft chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -316,7 +317,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-question: "**[Question]** {displayname}: {message}"
+  mc-to-discord-question: "**[Pregunta]** {username}: {message}"
   # This is the message that is used to relay minecraft global chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -326,7 +327,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord-shout: "**[Shout]** {displayname}: {message}"
+  mc-to-discord-shout: "**[Grito]** {username}: {message}"
   # This is the message sent to Discord when a player is temporarily muted in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
@@ -334,7 +335,7 @@ messages:
   # - {controllername}: The username of the user who muted the player
   # - {controllerdisplayname}: The display name of the user who muted the player
   # - {time}: The amount of time the player was muted for
-  temporary-mute: "{controllerdisplayname} has muted player {displayname} for {time}."
+  temporary-mute: "{controllerdisplayname} has muted player {username} for {time}."
   # This is the message sent to Discord when a player is temporarily muted (with a reason specified) in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
@@ -363,7 +364,7 @@ messages:
   # The following placeholders can be used here:
   # - {username}: The username of the player being unmuted
   # - {displayname}: The display name of the player being unmuted
-  unmute: "{displayname} unmuted."
+  unmute: "{username} unmuted."
   # This is the message sent to Discord when a player joins the minecraft server.
   # The following placeholders can be used here:
   # - {username}: The name of the user joining
@@ -372,7 +373,7 @@ messages:
   # - {online}: The amount of players online
   # - {unique}: The amount of unique players to ever join the server
   # ... PlaceholderAPI placeholders are also supported here too!
-  join: ":arrow_right: {displayname} has joined!"
+  join: ":arrow_right: {username} has joined!"
   # This is the message sent to Discord when a player joins the minecraft server for the first time.
   # The following placeholders can be used here:
   # - {username}: The name of the user joining
@@ -381,7 +382,7 @@ messages:
   # - {online}: The amount of players online
   # - {unique}: The amount of unique players to ever join the server
   # ... PlaceholderAPI placeholders are also supported here too!
-  first-join: ":arrow_right: :first_place: {displayname} has joined the server for the first time!"
+  first-join: ":arrow_right: :first_place: {username} has joined the server for the first time!"
   # This is the message sent to Discord when a player leaves the minecraft server.
   # The following placeholders can be used here:
   # - {username}: The name of the user leaving
@@ -390,7 +391,7 @@ messages:
   # - {online}: The amount of players online
   # - {unique}: The amount of unique players to ever join the server
   # ... PlaceholderAPI placeholders are also supported here too!
-  quit: ":arrow_left: {displayname} has left!"
+  quit: ":arrow_left: {username} has left!"
   # This is the message sent to Discord when a player dies.
   # The following placeholders can be used here:
   # - {username}: The name of the user who died
@@ -403,27 +404,27 @@ messages:
   # - {username}: The name of the user who became afk
   # - {displayname}: The display name of the user who became afk
   # ... PlaceholderAPI placeholders are also supported here too!
-  afk: ":person_walking: {displayname} is now AFK!"
+  afk: ":person_walking: {username} is now AFK!"
   # This is the message sent to Discord when a player is no longer afk.
   # The following placeholders can be used here:
   # - {username}: The name of the user who is no longer afk
   # - {displayname}: The display name of the user who is no longer afk
   # ... PlaceholderAPI placeholders are also supported here too!
-  un-afk: ":keyboard: {displayname} is no longer AFK!"
+  un-afk: ":keyboard: {username} is no longer AFK!"
   # This is the message sent to Discord when a player is awarded an advancement.
   # The following placeholders can be used here:
   # - {username}: The name of the user who was awarded the advancement.
   # - {displayname}: The display name of the user who was awarded the advancement.
   # - {advancement}: The name of the advancement.
   # ... PlaceholderAPI placeholders are also supported here too!
-  advancement: ":medal: {displayname} has completed the advancement **{advancement}**!"
+  advancement: ":medal: {username} has completed the advancement **{advancement}**!"
   # This is the message sent to Discord when a player runs the /me or /action command.
   # The following placeholders can be used here:
   # - {username}: The name of the user who ran the command
   # - {displayname}: The display name of the user who ran the command
   # - {action}: The action (message) the user used in the command.
   # ... PlaceholderAPI placeholders are also supported here too!
-  action: ":person_biking: {displayname} *{action}*"
+  action: ":person_biking: {username} *{action}*"
   # This is the message sent to Discord when the server starts.
   # - {starttimeseconds}: The amount of seconds it took to start the server (measured from JVM start time).
   server-start: ":white_check_mark: The server has started in {starttimeseconds} seconds!"
@@ -434,7 +435,7 @@ messages:
   # - {username}: The name of the user who got kicked
   # - {displayname}: The display name of the user who got kicked
   # - {reason}: The reason the player was kicked
-  kick: "{displayname} was kicked with reason: {reason}"
+  kick: "{username} was kicked with reason: {reason}"
   # This is the message that is used to relay minecraft private messages in Discord.
   # The following placeholders can be used here:
   # - {sender-username}: The username of the player sending the message
