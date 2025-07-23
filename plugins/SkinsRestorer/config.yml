@@ -32,7 +32,7 @@
 messages:
     # A locale code for the locale you want to use by default for messages and commands.
     # Has to be a string separated by an underscore.
-    locale: en
+    locale: es
     # A locale code for the messages and commands sent to the console.
     # This is useful if you want to use a different locale for the console than for players.
     # We recommend keeping this at the default value because we mostly only provide support in English.
@@ -78,7 +78,7 @@ commands:
     # A value of 'false' will disable this behaviour, and players will need to be given the permission explicitly.
     # This is because some platforms (like BungeeCord) do not have a default permission system.
     # If your platform supports default permissions, this option is ignored.
-    forceDefaultPermissions: true
+    forceDefaultPermissions: false
     # Players cooldown in seconds when changing skins (set to 0 to disable).
     # SkinErrorCooldown is used when an error or invalid url occurs.
     # Can be bypassed with 'skinsrestorer.bypasscooldown'.
